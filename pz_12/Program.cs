@@ -33,3 +33,4 @@ namespace pz_12
         }
     }
 }
+//var 24
