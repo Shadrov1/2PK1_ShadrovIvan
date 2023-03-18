@@ -82,6 +82,6 @@ Title="MainWindow" Height="450" Width="800">
             HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
             Content="+" FontSize="20">
         </Button>
-        <TextBox x:Name="Result" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="82"   FontFamily="Arial" FontSize="24" Foreground="#FFB8B8B8" Grid.ColumnSpan="2" Width="390"/>
+        <TextBox x:Name="Result" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="82"   FontFamily="Arial" FontSize="35" Foreground="Black" Grid.ColumnSpan="2" Width="390"/>
     </Grid>
 </Window>
