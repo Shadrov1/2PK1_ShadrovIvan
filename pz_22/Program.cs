@@ -11,7 +11,7 @@ namespace pz_22
     {
         static void Main(string[] args)
         {
-            Ticket myTicket = new Ticket(1, "123456", "регулярный", "", "A1", new DateTime(2023, 3, 20, 12, 0, 0));
+            Ticket myTicket = new Ticket(1, "123456", "регулярный", "124", "A1", new DateTime(2023, 3, 20, 12, 0, 0));
             myTicket.GetTimeLeft();
             myTicket.PrintInfo();
             Ticket ticket1 = new Ticket(2, "423423", "регулярный", "123", "A1", new DateTime(2023, 3, 20, 12, 0, 0));
