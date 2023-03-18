@@ -6,7 +6,7 @@ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 xmlns:local="clr-namespace:pz_25"
 mc:Ignorable="d"
 Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid x:Name="Calcul">
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -21,66 +21,67 @@ Title="MainWindow" Height="450" Width="800">
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Button x:Name="press7Button" Grid.Row="1" Grid.Column="0"
-HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-Content="7" FontSize="20" Click="press7Button_Click">
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+            Content="7" FontSize="20">
         </Button>
         <TextBlock x:Name="inputTextBlock" Grid.Row="0" Grid.Column="0"
-Grid.ColumnSpan="4" FontSize="60" TextAlignment="Right">
+            Grid.ColumnSpan="4" FontSize="60" TextAlignment="Right">
         </TextBlock>
         <Button x:Name="press1Button" Grid.Row="3" Grid.Column="0"
-HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-Content="1" FontSize="20" Click="press1Button_Click">
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+            Content="1" FontSize="20">
         </Button>
         <Button x:Name="press2Button" Grid.Row="3" Grid.Column="1"
-HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-Content="2" FontSize="20" Click="press2Button_Click">
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+            Content="2" FontSize="20">
         </Button>
         <Button x:Name="press3Button" Grid.Row="3" Grid.Column="2"
-HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-Content="3" FontSize="20" Click="press3Button_Click">
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+            Content="3" FontSize="20">
         </Button>
         <Button x:Name="press4Button" Grid.Row="2" Grid.Column="0"
-HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-Content="4" FontSize="20" Click="press4Button_Click">
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+            Content="4" FontSize="20">
         </Button>
         <Button x:Name="press5Button" Grid.Row="2" Grid.Column="1"
-HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-Content="5" FontSize="20" Click="press5Button_Click">
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+            Content="5" FontSize="20">
         </Button>
         <Button x:Name="press6Button" Grid.Row="2" Grid.Column="2"
-HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-Content="6" FontSize="20" Click="press6Button_Click">
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+            Content="6" FontSize="20">
         </Button>
         <Button x:Name="press8Button" Grid.Row="1" Grid.Column="1"
-HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-Content="8" FontSize="20" Click="press8Button_Click">
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+            Content="8" FontSize="20">
         </Button>
         <Button x:Name="press9Button" Grid.Row="1" Grid.Column="2"
-HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-Content="9" FontSize="20" Click="press9Button_Click">
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+            Content="9" FontSize="20">
         </Button>
         <Button x:Name="press0Button" Grid.Row="4" Grid.Column="0"
-HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-Content="0" FontSize="20" Click="press0Button_Click">
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+            Content="0" FontSize="20">
         </Button>
         <Button x:Name="pressButton_equal" Grid.Row="4" Grid.Column="1"
-Content="=" FontSize="20" Grid.ColumnSpan="2" Grid.RowSpan="1" Click="pressButton_equal_Click">
+            Content="=" FontSize="20" Grid.ColumnSpan="2" Grid.RowSpan="1">
         </Button>
         <Button x:Name="presButton_divide" Grid.Row="4" Grid.Column="3"
-HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-Content="/" FontSize="20" Click="presButton_divide_Click">
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+            Content="/" FontSize="20">
         </Button>
         <Button x:Name="pressButton_multi" Grid.Row="3" Grid.Column="4"
-HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-Content="*" FontSize="20" Click="pressButton_multi_Click">
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+            Content="*" FontSize="20">
         </Button>
         <Button x:Name="pressButton_subtraction" Grid.Row="2" Grid.Column="4"
-HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-Content="-" FontSize="20" Click="pressButton_subtraction_Click">
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+            Content="-" FontSize="20">
         </Button>
         <Button x:Name="pressButton_addition" Grid.Row="1" Grid.Column="4"
-HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-Content="+" FontSize="20" Click="pressButton_addition_Click">
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+            Content="+" FontSize="20">
         </Button>
+        <TextBox x:Name="Result" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="82"   FontFamily="Arial" FontSize="24" Foreground="#FFB8B8B8" Grid.ColumnSpan="2" Width="390"/>
     </Grid>
 </Window>

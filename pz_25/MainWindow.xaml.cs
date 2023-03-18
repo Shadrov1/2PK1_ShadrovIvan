@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,87 +21,34 @@ namespace pz_25
         public MainWindow()
         {
             InitializeComponent();
+            foreach (UIElement element in Calcul.Children)
+            {
+                if (element is Button)
+                {
+                    ((Button)element).Click += Button_Click;
+                }
+            }
         }
 
-        private void press7Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            inputTextBlock.Text += "7";
+            string str = (string)((Button)e.OriginalSource).Content;
+
+            if (str == "AC")
+            {
+                Result.Text = "";
+            }
+            else if (str == "=")
+            {
+                string value = new DataTable().Compute(Result.Text, null).ToString();//
+
+                Result.Text = value;
+            }
+            else
+            {
+                Result.Text += str;
+            }
         }
 
-        private void press8Button_Click(object sender, RoutedEventArgs e)
-        {
-            inputTextBlock.Text += "8";
-        }
-
-        private void press9Button_Click(object sender, RoutedEventArgs e)
-        {
-            inputTextBlock.Text += "9";
-        }
-
-        private void press4Button_Click(object sender, RoutedEventArgs e)
-        {
-            inputTextBlock.Text += "4";
-        }
-
-        private void press5Button_Click(object sender, RoutedEventArgs e)
-        {
-            inputTextBlock.Text += "5";
-        }
-
-        private void press6Button_Click(object sender, RoutedEventArgs e)
-        {
-            inputTextBlock.Text += "6";
-        }
-
-        private void press1Button_Click(object sender, RoutedEventArgs e)
-        {
-            inputTextBlock.Text += "1";
-        }
-
-        private void press2Button_Click(object sender, RoutedEventArgs e)
-        {
-            inputTextBlock.Text += "2";
-        }
-
-        private void press3Button_Click(object sender, RoutedEventArgs e)
-        {
-            inputTextBlock.Text += "3";
-        }
-
-        private void press0Button_Click(object sender, RoutedEventArgs e)
-        {
-            inputTextBlock.Text += "0";
-        }
-
-        private void pressButton_addition_Click(object sender, RoutedEventArgs e)
-        {
-            inputTextBlock.Text += "+";
-        }
-
-        private void pressButton_subtraction_Click(object sender, RoutedEventArgs e)
-        {
-            inputTextBlock.Text += "-";
-        }
-
-        private void pressButton_multi_Click(object sender, RoutedEventArgs e)
-        {
-            inputTextBlock.Text += "*";
-        }
-
-        private void presButton_divide_Click(object sender, RoutedEventArgs e)
-        {
-            inputTextBlock.Text += "/";
-        }
-
-        private void pressButton_equal_Click(object sender, RoutedEventArgs e)
-        {
-            string expression = inputTextBlock.Text;
-            inputTextBlock.Text = Calculation(expression).ToString();
-        }
-        private double Calculation(string expression)
-        {
-
-            return 0;
-        }
     }
 }
